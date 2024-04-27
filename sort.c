@@ -13,7 +13,7 @@ struct node* merge(struct node *l1, struct node* l2, sort_type_et type)
 
 	if(SJF == type)
 	{
-		if(l1->task->burst < l2->task->burst)
+		if(l1->task->burst <= l2->task->burst)
 		{
 			res = l1;
 			res->next = merge(l1->next, l2, type);
@@ -26,7 +26,7 @@ struct node* merge(struct node *l1, struct node* l2, sort_type_et type)
 	}
 	else if(PRIORITY == type)
 	{
-		if(l1->task->priority > l2->task->priority)
+		if(l1->task->priority >= l2->task->priority)
 		{
 			res = l1;
 			res->next = merge(l1->next, l2, type);
