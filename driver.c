@@ -45,8 +45,12 @@ int main(int argc, char *argv[])
     fclose(in);
 
 	traverse(head);
+	
+	fprintf(stdout,"----------------------------scheduling tasks---------------------------------\n");
+
     // invoke the scheduler
     schedule();
 
+	fprintf(stdout, "\n\n");
     return 0;
 }
