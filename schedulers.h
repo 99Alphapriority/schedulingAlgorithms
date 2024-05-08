@@ -1,5 +1,6 @@
 #define MIN_PRIORITY 1
 #define MAX_PRIORITY 10
+#define TIME_QUANTUM 10
 
 extern struct node *head;
 extern struct node *curr;
