@@ -1,7 +1,12 @@
 # schedulingAlgorithms
 Programming project from chapter 5 CPU scheduling of Operating systems concept book. 
 
+TO DO:
+ - Use thread pool to simulate a 4 core single threaded CPU.
+
+
 ---------original REAME------------------
+
 Completing this project will require writing the following C files:
 
 schedule_fcfs.c
